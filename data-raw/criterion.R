@@ -2,6 +2,7 @@
 
 
 library(readr)
+library(janitor)
 
 criterion <- read_csv("data-raw/criterion.csv")
 
