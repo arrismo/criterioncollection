@@ -1,9 +1,11 @@
-Package: CriterionCollection
-Title: What the Package Does (One Line, Title Case)
-Version: 0.0.0.9000
-Authors@R: 
-    person("Arris", "Moise", email = "amoise@smith.edu", role = c("aut", "cre"))
-Description: What the package does (one paragraph).
+Package: criterioncollection
+Title: Data for Movies in the Criterion Collection
+Version: 0.0.0.9300
+Authors@R: c(
+    person("Arris", "Moise", email = "amoise@smith.edu", role = c("aut", "cre")), 
+    person("Caroline", "McKenna", email = "cmckenna@smith.edu", role = c("aut", "cre"))
+    )
+Description: Data from the Criterion Collection's web store that compiles the spine number, year, country, title, and director for each available item. Data is retrieved from <https://www.criterion.com/shop/browse/list>, up-to-date as of March 2022.
 License: GPL-3
 Encoding: UTF-8
 Roxygen: list(markdown = TRUE)
