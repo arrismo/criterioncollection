@@ -28,6 +28,7 @@ The current development version of criterioncollection can be used to access the
 ``` r
 library(criterioncollection)
 head(criterion)
+?criterion
 ```
 
 ## References
