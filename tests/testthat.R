@@ -1,6 +1,6 @@
 library(testthat)
-library(CriterionCollection)
+library(criterioncollection)
 
-test_check("CriterionCollection")
+test_check("criterioncollection")
 
 

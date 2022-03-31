@@ -3,7 +3,7 @@ Title: Data for Movies in the Criterion Collection
 Version: 0.0.0.9300
 Authors@R: c(
     person("Arris", "Moise", email = "amoise@smith.edu", role = c("aut", "cre")), 
-    person("Caroline", "McKenna", email = "cmckenna@smith.edu", role = c("aut", "cre"))
+    person("Caroline", "McKenna", email = "cmckenna@smith.edu", role = c("aut"))
     )
 Description: Data from the Criterion Collection's web store that compiles the spine number, year, country, title, and director for each available item. Data is retrieved from <https://www.criterion.com/shop/browse/list>, up-to-date as of March 2022.
 License: GPL-3
