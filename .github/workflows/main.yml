@@ -26,7 +26,7 @@ jobs:
         R -e 'install.packages("stringr")'
     # Run R script
     - name: Scrape
-      run: Rscript criterion.R
+      run: Rscript ~/data-raw/criterion.R
       
  # Add new files in data folder, commit along with other modified files, push
     - name: Commit files
