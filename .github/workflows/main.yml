@@ -1,4 +1,6 @@
 name: criterionscrape
+- name: Checkout
+  uses: actions/checkout@master
 
 # Controls when the action will run.
 on:
