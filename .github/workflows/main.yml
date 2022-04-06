@@ -3,7 +3,7 @@ name: criterionscrape
 # Controls when the action will run.
 on:
   schedule:
-    - cron:  '27 22 * * *'
+    - cron:  '36 22 * * *'
 
 
 jobs: 
