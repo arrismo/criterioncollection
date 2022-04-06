@@ -4,10 +4,10 @@ name: criterionscrape
 on:
   push:
     branches: main
-    
 
 
-jobs: 
+
+jobs:
   autoscrape:
     # The type of runner that the job will run on
     runs-on: macos-latest
@@ -26,8 +26,8 @@ jobs:
         R -e 'install.packages("stringr")'
     # Run R script
     - name: Scrape
-      run: Rscript ~/data-raw/criterion.R
-      
+      run: Rscript /data-raw/criterion.R
+
  # Add new files in data folder, commit along with other modified files, push
     - name: Commit files
       run: |
