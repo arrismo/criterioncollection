@@ -1,4 +1,5 @@
 name: criterionscrape
+
 - name: Checkout
   uses: actions/checkout@master
 
