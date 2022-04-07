@@ -40,3 +40,7 @@ jobs:
       env:
         REPO_KEY: ${{secrets.GITHUB_TOKEN}}
         username: github-actions
+
+# resources
+# https://blog--simonpcouch.netlify.app/blog/r-github-actions-commit/
+# https://www.youtube.com/watch?v=N3NrWMxeeJQ&t=587s
