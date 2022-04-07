@@ -22,7 +22,6 @@ jobs:
         R -e 'install.packages("rvest")'
         R -e 'install.packages("stringr")'
 
-
     - name: Scrape
       run: |
          source("data-raw/criterion.R")
@@ -35,7 +34,7 @@ jobs:
         git config --local user.name actions-user
         git config --local user.email "actions@github.com"
         git add data/*
-        git commit -am "GH ACTION Headlines $(date)"
+        git commit -am "running scraper"
         git push origin main
       env:
         REPO_KEY: ${{secrets.GITHUB_TOKEN}}
