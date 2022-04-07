@@ -2,8 +2,8 @@ name: criterionscrape
 
 # Controls when the action will run.
 on:
-  push:
-    branches: main
+  schedule:
+    - cron: "* * * * *"
 
 jobs:
   autoscrape:
