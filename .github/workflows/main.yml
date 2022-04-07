@@ -5,12 +5,7 @@ on:
   push:
     branches: main
 
-
-
 jobs:
-   - name: Checkout
-          uses: actions/checkout@v2
-
   autoscrape:
     # The type of runner that the job will run on
     runs-on: macos-latest
