@@ -38,13 +38,15 @@ year_data <- html_text(year_data_html)
 year_data<-gsub("\n","",year_data)
 
 
-movies_df<-data.frame(Rank = rank_data, Year = year_data,Country = country_data, Title = title_data, Director = director_data )
+movies_df<-data.frame(rank = rank_data, year = year_data, country = country_data, title = title_data, director = director_data )
 movies_df = movies_df[-1,]
 
 write.csv(movies_df,"data-raw/criterion.csv", row.names = FALSE)
 
 criterion <- read_csv("data-raw/criterion.csv")
+
 criterion$country <- gsub("[\r\n]", "", criterion$country)
+
 usethis::use_data(criterion, overwrite = TRUE)
 
 
