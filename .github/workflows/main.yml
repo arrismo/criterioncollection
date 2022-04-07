@@ -1,8 +1,5 @@
 name: criterionscrape
 
-- name: Checkout
-  uses: actions/checkout@master
-
 # Controls when the action will run.
 on:
   push:
@@ -11,14 +8,17 @@ on:
 
 
 jobs:
+   - name: Checkout
+          uses: actions/checkout@v2
+
   autoscrape:
     # The type of runner that the job will run on
     runs-on: macos-latest
 
     # Load repo and install R
     steps:
-    - uses: actions/checkout@master
-    - uses: r-lib/actions/setup-r@master
+    - uses: actions/checkout@main
+    - uses: r-lib/actions/setup-r@main
 
     # Set-up R
     - name: Install packages
