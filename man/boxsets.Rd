@@ -11,7 +11,6 @@ A data frame of 276 rows with each row representing the boxset title and the mov
 \item{boxset_title}{Name of boxset title}
 \item{movie_title}{Name of movie in boxset}
 \item{year}{Year in which the movie was released}
-
 }
 }
 \usage{

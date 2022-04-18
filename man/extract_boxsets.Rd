@@ -2,10 +2,12 @@
 % Please edit documentation in R/extract_boxsets.R
 \name{extract_boxsets}
 \alias{extract_boxsets}
-\title{Calls the parse API to load boxset dataframe}
+\title{Calls the parse API to load boxset dataframe
+Adds boxsets data set to your environment}
 \usage{
 extract_boxsets()
 }
 \description{
 Calls the parse API to load boxset dataframe
+Adds boxsets data set to your environment
 }
