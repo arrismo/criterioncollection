@@ -13,3 +13,18 @@
 #'   \item{director}{Director of the movie}
 #' }
 "criterion"
+
+#' Data for boxsets of movies from the Criterion Collection as of March 2022
+#'
+#' @format  A data frame of 276 rows with each row representing the boxset title and the movies in the set.
+#'
+#' \describe{
+#' \item{boxset_title}{Name of boxset title}
+#' \item{movie_title}{Name of movie in boxset}
+#' \item{year}{Year in which the movie was released}
+#'
+#' }
+#'
+#'
+"boxsets"
+

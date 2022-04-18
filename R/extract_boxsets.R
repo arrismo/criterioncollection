@@ -1,13 +1,16 @@
+globalVariables(c(
+  "py_run_file"
+))
 
-# logic behind extract_bosets function
-# if row is missing year, country, and director
-# then that is a boxset
+#' Calls the parse API to load boxset dataframe
+#'
+#' @import Matrix
+#' @import reticulate
+#'
+#'
 
-
-for (i in colnames(criterion)){
-  for (j in rownames(criterion)){
-    as.Text(print(criterion[, j]))
+extract_boxsets <- function() {
+  py_run_file("inst/parse_hub_api.py")
   }
-}
 
 
