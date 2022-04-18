@@ -22,7 +22,6 @@
 #' \item{boxset_title}{Name of boxset title}
 #' \item{movie_title}{Name of movie in boxset}
 #' \item{year}{Year in which the movie was released}
-#'
 #' }
 #'
 #'
