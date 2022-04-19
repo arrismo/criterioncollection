@@ -1,4 +1,4 @@
-"rank","year","country","title","director"
+"spine","year","country","title","director"
 "1","1937","
 France
 
@@ -61,7 +61,7 @@ Japan
 ","Samurai II: Duel at Ichijoji Temple","Hiroshi Inagaki"
 "16","1956","
 Japan
- 
+
 ","Samurai III: Duel at Ganryu Island","Hiroshi Inagaki"
 "17","1976","
 Italy
@@ -162,7 +162,7 @@ United States
 "41","1944","
 United Kingdom
 
-","Henry V"," Laurence Olivier"
+","Henry V","Laurence Olivier"
 "42","1992","
 United States
 
@@ -1095,7 +1095,7 @@ Japan
 France
 
 ","Jules and Jim","François Truffaut"
-"282"," ","
+"282","  ","
 ","Andrzej Wajda: Three War Films"," "
 "283","1955","
 Poland
@@ -1204,7 +1204,7 @@ France
 "309","1953","
 Japan
 
-","Ugetsu","Kenji Mizoguchi "
+","Ugetsu","Kenji Mizoguchi"
 "310","1967","
 Japan
 
@@ -1617,7 +1617,7 @@ United States
 United States
 
 ","The Naked Prey","Cornel Wilde"
-"416"," 1951","
+"416","1951","
 Sweden
 
 ","Miss Julie","Alf Sjöberg"
@@ -2373,7 +2373,7 @@ United States
 United States
 
 ","¡Alambrista!","Robert M. Young"
-"610","1963","
+"610","1963 ","
 Italy
 
 ","The Organizer","Mario Monicelli"
@@ -3612,7 +3612,7 @@ United States
 "926","1975","
 Philippines
 
-","Manila in the Claws of Light","Lino Brocka"
+","Manila in the Claws of Light"," Lino Brocka"
 "927","1983","
 Spain
 
@@ -3770,7 +3770,7 @@ United States
 "966","1945","
 United States
 
-"," Detour","Edgar G. Ulmer"
+","Detour","Edgar G. Ulmer"
 "967","1978","
 United States
 
@@ -3793,7 +3793,7 @@ Hong Kong
 ","Police Story","Jackie Chan"
 "972","1988","
 Hong Kong
-
+ 
 ","Police Story 2","Jackie Chan"
 "973","1979","
 Australia
@@ -5055,7 +5055,7 @@ NA,"1986","
 Spain
 
 ","El amor brujo","Carlos Saura"
-NA," ","
+NA,"  ","
 ","Eclipse Series 7: Postwar Kurosawa"," "
 NA,"1946","
 Japan
