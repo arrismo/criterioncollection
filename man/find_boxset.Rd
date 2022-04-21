@@ -13,7 +13,9 @@ find_boxset(boxset_title)
 Output a data frame for specific boxset
 }
 \examples{
-library(criterioncollection)
+\donttest{
+
 find_boxset("The Before Trilogy")
+}
 
 }

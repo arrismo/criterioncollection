@@ -13,7 +13,8 @@ find_by_spine(spine_no)
 Output a data frame for specific spine number
 }
 \examples{
-library(criterioncollection)
-find_by_spine("1")
+\donttest{
 
+find_by_spine("1")
+}
 }

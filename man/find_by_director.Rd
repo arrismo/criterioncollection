@@ -13,7 +13,8 @@ find_by_director(film_director)
 Output a data frame for specific movie director
 }
 \examples{
-library(criterioncollection)
-find_by_director("John Woo")
+\donttest{
 
+find_by_director("John Woo")
+}
 }

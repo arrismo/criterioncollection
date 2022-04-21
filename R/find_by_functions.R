@@ -7,23 +7,29 @@ globalVariables(c(
 #' Output a data frame for specific spine number
 #'
 #' @param spine_no spine number
-#'
+#' @importFrom utils View
 #' @export
 #' @examples
-#' library(criterioncollection)
-#' find_by_spine("1")
+#' \donttest{
 #'
+#' find_by_spine("1")
+#'}
 find_by_spine <- function(spine_no) {
   UseMethod("find_by_spine")
 }
 
 find_by_spine <- function(spine_no) {
+  if(!is.character(spine_no)){
+    stop("Spine number should be a character")
+  }else{
   spine_search<- criterion[grep(spine_no, criterion$spine), ]
   if (dim(spine_search)[1] == 0) {
-    stop("Title not found")
+    stop("Spine number not found")
   } else {
-    View(spine_search)
+    if(interactive()){
+      View(spine_search)}
     print("Find_by_spine dataframe generated")
+  }
   }
 }
 
@@ -35,9 +41,10 @@ find_by_spine <- function(spine_no) {
 #' @param film_title name of film
 #' @export
 #' @examples
-#' library(criterioncollection)
-#' find_by_title("Amarcord")
+#' \donttest{
 #'
+#' find_by_title("Amarcord")
+#' }
 find_by_title <- function(film_title) {
   UseMethod("find_by_title")
 }
@@ -47,7 +54,8 @@ find_by_title <- function(film_title) {
   if (dim(film_search)[1] == 0) {
     stop("Title not found")
   } else {
-    View(film_search)
+    if(interactive()){
+      View(film_search)}
     print("Find_by_title dataframe generated")
   }
 
@@ -62,24 +70,27 @@ find_by_title <- function(film_title) {
 #'
 #' @export
 #' @examples
-#' library(criterioncollection)
-#' find_by_director("John Woo")
+#' \donttest{
 #'
+#' find_by_director("John Woo")
+#' }
 find_by_director <- function(film_director) {
   Use_Method("find_by_director")
 }
 
+# option to turn behavior her
 find_by_director <- function(film_director) {
   director_search<- criterion[grep(film_director, criterion$director), ]
   if (dim(director_search)[1] == 0) {
-    stop("Title not found")
+    stop("Director not found")
   } else {
-    View(director_search)
+    if(interactive()){
+      View(director_search)}
     print("Find_by_director dataframe generated")
   }
 }
 
-
+#'
 #' Search by boxset title
 #'
 #' Output a data frame for specific boxset
@@ -89,19 +100,22 @@ find_by_director <- function(film_director) {
 #'
 #' @export
 #' @examples
-#' library(criterioncollection)
+#' \donttest{
+#'
 #' find_boxset("The Before Trilogy")
+#' }
 #'
 find_boxset <- function(boxset_title) {
   Use_Method("find_boxset")
 }
 
 find_boxset <- function(boxset_title) {
-  boxset_search<- boxsets[grep(boxset_title, boxsets$boxset_title), ]
+  boxset_search <- boxsets[grep(boxset_title, boxsets$boxset_title), ]
   if (dim(boxset_search)[1] == 0) {
-    stop("Title not found")
+    stop("Boxset Title not found")
   } else {
-    View(boxset_search)
+    if(interactive()){
+      View(boxset_search)}
     print("Find_boxset dataframe generated")
   }
 }

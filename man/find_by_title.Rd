@@ -13,7 +13,8 @@ find_by_title(film_title)
 Output a data frame for specific film title
 }
 \examples{
-library(criterioncollection)
-find_by_title("Amarcord")
+\donttest{
 
+find_by_title("Amarcord")
+}
 }
