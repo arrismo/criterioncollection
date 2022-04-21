@@ -1,9 +1,12 @@
-
+globalVariables(c(
+  "criterion","boxsets"
+))
 #' Search by Spine Number
+#'
 #'
 #' Output a data frame for specific spine number
 #'
-#' @param spine_no
+#' @param spine_no spine number
 #'
 #' @export
 #' @examples
@@ -29,8 +32,7 @@ find_by_spine <- function(spine_no) {
 #'
 #' Output a data frame for specific film title
 #'
-#' @param film_title
-#'
+#' @param film_title name of film
 #' @export
 #' @examples
 #' library(criterioncollection)
@@ -55,7 +57,8 @@ find_by_title <- function(film_title) {
 #'
 #' Output a data frame for specific movie director
 #'
-#' @param film_director
+#' @param film_director name of film director
+#'
 #'
 #' @export
 #' @examples
@@ -81,7 +84,8 @@ find_by_director <- function(film_director) {
 #'
 #' Output a data frame for specific boxset
 #'
-#' @param boxset_title
+#' @param boxset_title title of boxset
+#'
 #'
 #' @export
 #' @examples

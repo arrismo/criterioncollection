@@ -7,7 +7,7 @@
 find_by_title(film_title)
 }
 \arguments{
-\item{film_title}{}
+\item{film_title}{name of film}
 }
 \description{
 Output a data frame for specific film title

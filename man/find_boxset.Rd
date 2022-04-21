@@ -7,7 +7,7 @@
 find_boxset(boxset_title)
 }
 \arguments{
-\item{boxset_title}{}
+\item{boxset_title}{title of boxset}
 }
 \description{
 Output a data frame for specific boxset

@@ -7,7 +7,7 @@
 find_by_spine(spine_no)
 }
 \arguments{
-\item{spine_no}{}
+\item{spine_no}{spine number}
 }
 \description{
 Output a data frame for specific spine number

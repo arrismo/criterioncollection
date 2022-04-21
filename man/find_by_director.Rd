@@ -7,7 +7,7 @@
 find_by_director(film_director)
 }
 \arguments{
-\item{film_director}{}
+\item{film_director}{name of film director}
 }
 \description{
 Output a data frame for specific movie director
