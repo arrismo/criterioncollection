@@ -6,7 +6,7 @@
 #' @format A data frame of 1,515 rows with each row representing an item, such
 #' as a movie or box set, in the Criterion Collection.
 #' \describe{
-#'   \item{rank}{Spine number of the movie or box set}
+#'   \item{spine}{Spine number of the movie or box set}
 #'   \item{year}{Year in which the movie was released}
 #'   \item{country}{Country in which the movie was made}
 #'   \item{title}{Movie or box set title}

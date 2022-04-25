@@ -1,4 +1,4 @@
-"rank","year","country","title","director"
+"spine","year","country","title","director"
 "1","1937","
 France
 
@@ -61,7 +61,7 @@ Japan
 ","Samurai II: Duel at Ichijoji Temple","Hiroshi Inagaki"
 "16","1956","
 Japan
- 
+
 ","Samurai III: Duel at Ganryu Island","Hiroshi Inagaki"
 "17","1976","
 Italy
@@ -162,7 +162,7 @@ United States
 "41","1944","
 United Kingdom
 
-","Henry V"," Laurence Olivier"
+","Henry V","Laurence Olivier"
 "42","1992","
 United States
 
@@ -426,7 +426,7 @@ France
 "107","1986","
 United Kingdom
 
-","Mona Lisa","Neil Jordan"
+","Mona Lisa","Neil Jordan "
 "108","1996","
 United States
 
@@ -1095,7 +1095,7 @@ Japan
 France
 
 ","Jules and Jim","François Truffaut"
-"282"," ","
+"282","  ","
 ","Andrzej Wajda: Three War Films"," "
 "283","1955","
 Poland
@@ -1204,7 +1204,7 @@ France
 "309","1953","
 Japan
 
-","Ugetsu","Kenji Mizoguchi "
+","Ugetsu","Kenji Mizoguchi"
 "310","1967","
 Japan
 
@@ -1464,7 +1464,7 @@ United Kingdom
 "376","1941","
 United Kingdom
 
-","49th Parallel","Michael Powell"
+","49th Parallel","Michael Powell "
 "377","1960","
 Japan
 
@@ -1617,7 +1617,7 @@ United States
 United States
 
 ","The Naked Prey","Cornel Wilde"
-"416"," 1951","
+"416","1951","
 Sweden
 
 ","Miss Julie","Alf Sjöberg"
@@ -3770,7 +3770,7 @@ United States
 "966","1945","
 United States
 
-"," Detour","Edgar G. Ulmer"
+","Detour","Edgar G. Ulmer"
 "967","1978","
 United States
 
@@ -4316,7 +4316,7 @@ United States
 "1105","1993","
 United States
 
-","Menace II Society","Albert Hughes and Allen Hughes"
+ ","Menace II Society","Albert Hughes and Allen Hughes"
 "1106","2020","
 United States
 
@@ -4425,6 +4425,22 @@ United States
 Norway
 
 ","The Worst Person in the World","Joachim Trier"
+"1133","2017","
+United States
+
+","Okja","Bong Joon Ho"
+"1134","1980","
+United States
+
+","Raging Bull","Martin Scorsese"
+"1135","1995","
+United States
+
+","Devil in a Blue Dress","Carl Franklin"
+"1136","2021","
+Japan
+
+","Drive My Car","Ryusuke Hamaguchi"
 NA," ","
 ","The Samurai Trilogy"," "
 NA," ","
@@ -4451,12 +4467,12 @@ NA,"1936","
 France
 
 ","The Lower Depths","Jean Renoir"
+NA," ","
+","Rebel Samurai: Sixties Swordplay Classics"," "
 NA,"1957","
 Japan
 
 ","The Lower Depths","Akira Kurosawa"
-NA," ","
-","Rebel Samurai: Sixties Swordplay Classics"," "
 NA,"1930","
 United States
 
@@ -5253,7 +5269,7 @@ NA,"1972","
 Belgium
 
 ","La chambre","Chantal Akerman"
-NA,"1972","
+NA,"1972 ","
 United States
 
 ","Hotel Monterey","Chantal Akerman"
@@ -5448,7 +5464,7 @@ NA," ","
 NA,"1989","
 Finland
 
-","Leningrad Cowboys Go America","Aki Kaurismäki"
+ ","Leningrad Cowboys Go America","Aki Kaurismäki"
 NA,"1994","
 Finland
 
@@ -5767,49 +5783,49 @@ NA,"1940","
 Sweden
 
 ","June Night","Per Lindberg"
-NA,"1950","
-United Kingdom
-
-","Last Holiday","Henry Cass"
-NA,"1992","
-United States
-
-","Color Adjustment","Marlon Riggs"
-NA,"1989","
-United States
-
-","Tongues Untied","Marlon Riggs"
-NA," ","
-","Streetwise/Tiny: The Life of Erin Blackwell"," "
-NA,"1956","
-France
-
-","Gervaise","René Clément"
-NA,"1936","
-France
-
-","Mayerling","Anatole Litvak"
-NA,"1991","
-United States
-
-","Anthem","Marlon Riggs"
-NA,"1990","
-United States
-
-","Affirmations","Marlon Riggs"
 NA,"1959","
 Italy
 
 ","Kapò","Gillo Pontecorvo"
-NA,"1995","
+NA,"1956","
+France
+
+","Gervaise","René Clément"
+NA," ","
+","Streetwise/Tiny: The Life of Erin Blackwell"," "
+NA,"1950","
+United Kingdom
+
+","Last Holiday","Henry Cass"
+NA,"1991","
 United States
 
-","Black Is . . . Black Ain’t","Marlon Riggs"
+","Anthem","Marlon Riggs"
+NA,"1992","
+United States
+
+","Color Adjustment","Marlon Riggs"
+NA,"1990","
+United States
+
+","Affirmations","Marlon Riggs"
 NA,"1993","
 United States
 
 ","Non, Je Ne Regrette Rien (No Regret)","Marlon Riggs"
+NA,"1995","
+United States
+
+","Black Is . . . Black Ain’t","Marlon Riggs"
 NA,"1986","
 United States
 
 ","Ethnic Notions","Marlon Riggs"
+NA,"1989","
+United States
+
+","Tongues Untied","Marlon Riggs"
+NA,"1936","
+France
+
+","Mayerling","Anatole Litvak"
