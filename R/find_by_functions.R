@@ -87,6 +87,7 @@ find_by_director <- function(film_director) {
     if(interactive()){
       View(director_search)}
     print("Find_by_director dataframe generated")
+    print(director_search)
   }
 }
 
@@ -114,8 +115,9 @@ find_boxset <- function(boxset_title) {
   if (dim(boxset_search)[1] == 0) {
     stop("Boxset Title not found")
   } else {
-    if(interactive()){
-      View(boxset_search)}
+    # if(interactive()){
+    #   View(boxset_search)}
+    print(boxset_search)
     print("Find_boxset dataframe generated")
   }
 }

@@ -13,6 +13,7 @@ as a movie or box set, in the Criterion Collection.
 \item{country}{Country in which the movie was made}
 \item{title}{Movie or box set title}
 \item{director}{Director of the movie}
+\item{imdb_id}{Unique IMDb ID for each movie}
 }
 }
 \usage{

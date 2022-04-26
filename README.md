@@ -45,21 +45,30 @@ spine_number, year, country, title, and director.
 
 ``` r
 library(criterioncollection)
-head(criterion)
-#>   rank year              country                title          director
-#> 1    1 1937         \nFrance\n\n       Grand Illusion       Jean Renoir
-#> 2    2 1954          \nJapan\n\n        Seven Samurai    Akira Kurosawa
-#> 3    3 1938 \nUnited Kingdom\n\n    The Lady Vanishes  Alfred Hitchcock
-#> 4    4 1973          \nItaly\n\n             Amarcord  Federico Fellini
-#> 5    5 1959         \nFrance\n\n        The 400 Blows François Truffaut
-#> 6    6 1946         \nFrance\n\n Beauty and the Beast      Jean Cocteau
-#>     imdb_id
-#> 1 tt0028950
-#> 2 tt0047478
-#> 3 tt0030341
-#> 4 tt0071129
-#> 5 tt0053198
-#> 6 tt0038348
+View(criterion)
+```
+
+You can use the following functions to find films by the director,
+spine, or film title. Each function outputs a data frame based on your
+input.
+
+``` r
+find_by_director("John Woo")
+#> [1] "Find_by_director dataframe generated"
+#>   spine year   country       title director
+#> 8     8 1989 Hong Kong  The Killer John Woo
+#> 9     9 1992 Hong Kong Hard Boiled John Woo
+find_by_title("Grand Illusion")
+#> [1] "Find_by_title dataframe generated"
+find_by_spine("1")
+#> [1] "Find_by_spine dataframe generated"
+find_boxset("Melvin Van Peebles: Essential Films")
+#> [1] "Find_boxset dataframe generated"
+```
+
+``` r
+find_boxset("The Koker Trilogy")
+#> [1] "Find_boxset dataframe generated"
 ```
 
 ## References
@@ -69,3 +78,6 @@ head(criterion)
 
 -   Criterion. *Our Mission*. The Criterion Collection.
     <https://www.criterion.com/about>.
+
+-   Criterion. *Box Sets*. The Criterion Collection.
+    <https://www.criterion.com/shop/collection/380-box-sets>

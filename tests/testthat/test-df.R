@@ -2,7 +2,7 @@
 library(testthat)
 
 test_that("check number of rows", {
-  expect_equal(nrow(criterion), 1519)
+  expect_equal(nrow(criterion), 1515)
 })
 
 
