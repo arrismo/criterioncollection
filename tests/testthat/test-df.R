@@ -7,7 +7,7 @@ test_that("check number of rows", {
 
 
 test_that("check number of columns", {
-  expect_equal(ncol(criterion), 5)
+  expect_equal(ncol(criterion), 6)
 })
 
 
