@@ -5,3 +5,4 @@
 ^.github
 ^R/extract_boxsets.R
 ^inst
+^\.github$
