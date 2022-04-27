@@ -19,8 +19,8 @@ find_by_spine <- function(spine_no) {
 }
 
 find_by_spine <- function(spine_no) {
-  if(!is.numeric(spine_no)){
-    stop("Spine number should be a number")
+  if(!is.character(spine_no)){
+    stop("Spine number should be a character")
   }else{
   spine_search<- criterion[grep(spine_no, criterion$spine), ]
   if (dim(spine_search)[1] == 0) {
