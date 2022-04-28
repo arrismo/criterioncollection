@@ -1,11 +1,13 @@
 
 <!-- README.md is generated from README.Rmd. Please edit that file -->
 
-# criterioncollection R Package
+# criterioncollection
 
 <!-- badges: start -->
 
 [![R-CMD-check](https://github.com/arrismo/CriterionCollection/workflows/R-CMD-check/badge.svg)](https://github.com/arrismo/CriterionCollection/actions)
+[![Lifecycle:
+experimental](https://img.shields.io/badge/lifecycle-experimental-orange.svg)](https://lifecycle.r-lib.org/articles/stages.html#experimental)
 <!-- badges: end -->
 
 ## Overview
@@ -34,7 +36,6 @@ The current version of criterioncollection can be installed from
 ``` r
 install.packages("remotes")
 remotes::install_github("arrismo/CriterionCollection")
-?criterion
 ```
 
 ## Loading and Usage
@@ -47,6 +48,15 @@ spine\_number, year, country, title, and director.
 ``` r
 library(criterioncollection)
 View(criterion)
+?criterion
+```
+
+You can also view our boxsets dataset that contains the boxset title,
+individual movie title, and year released.
+
+``` r
+View(boxsets)
+?boxsets
 ```
 
 You can use the following functions to find films by the director,
