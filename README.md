@@ -35,7 +35,7 @@ The current version of criterioncollection can be installed from
 
 ``` r
 install.packages("remotes")
-remotes::install_github("arrismo/CriterionCollection")
+remotes::install_github("arrismo/criterioncollection")
 ```
 
 ## Loading and Usage
