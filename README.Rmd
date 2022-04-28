@@ -39,7 +39,7 @@ remotes::install_github("arrismo/CriterionCollection")
 
 ## Loading and Usage
 
-The current development version of criterioncollection can be used to access the data. The dataset, criterion, includes columns for spine_number, year, country, title, and director.
+The current version of criterioncollection can be used primarily to access data on the Criterion Collection. The dataset, criterion, contains every item in the Criterion Collection and includes columns for spine_number, year, country, title, and director.
 
 ```{r example}
 library(criterioncollection)
@@ -55,7 +55,7 @@ find_by_spine("1")
 find_boxset("Melvin Van Peebles: Essential Films")
 ```
 
-
+The package also contains a dataset with only the boxsets and the movies in those boxsets. The contents of individual boxsets can be viewed using a similar function, find_boxset.
 ```{r message=FALSE, paged.print=TRUE}
 find_boxset("The Koker Trilogy")
 ```

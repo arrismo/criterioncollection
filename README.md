@@ -39,9 +39,10 @@ remotes::install_github("arrismo/CriterionCollection")
 
 ## Loading and Usage
 
-The current development version of criterioncollection can be used to
-access the data. The dataset, criterion, includes columns for
-spine_number, year, country, title, and director.
+The current version of criterioncollection can be used primarily to
+access data on the Criterion Collection. The dataset, criterion,
+contains every item in the Criterion Collection and includes columns for
+spine\_number, year, country, title, and director.
 
 ``` r
 library(criterioncollection)
@@ -63,11 +64,24 @@ find_by_title("Grand Illusion")
 find_by_spine("1")
 #> [1] "Find_by_spine dataframe generated"
 find_boxset("Melvin Van Peebles: Essential Films")
+#>                          boxset_title                       movie_title year
+#> 6 Melvin Van Peebles: Essential Films     The Story of a Three Day Pass 1967
+#> 7 Melvin Van Peebles: Essential Films                    Watermelon Man 1967
+#> 8 Melvin Van Peebles: Essential Films Sweet Sweetback’s Baadasssss Song 1967
+#> 9 Melvin Van Peebles: Essential Films               Don’t Play Us Cheap 1967
 #> [1] "Find_boxset dataframe generated"
 ```
 
+The package also contains a dataset with only the boxsets and the movies
+in those boxsets. The contents of individual boxsets can be viewed using
+a similar function, find\_boxset.
+
 ``` r
 find_boxset("The Koker Trilogy")
+#>          boxset_title                  movie_title year
+#> 165 The Koker Trilogy Where Is the Friend’s House? 1987
+#> 166 The Koker Trilogy             And Life Goes On 1987
+#> 167 The Koker Trilogy      Through the Olive Trees 1987
 #> [1] "Find_boxset dataframe generated"
 ```
 
