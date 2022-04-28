@@ -29,6 +29,7 @@ find_by_spine <- function(spine_no) {
     if(interactive()){
       View(spine_search)}
     print("Find_by_spine dataframe generated")
+    print(spine_search)
   }
   }
 }
@@ -57,6 +58,7 @@ find_by_title <- function(film_title) {
     if(interactive()){
       View(film_search)}
     print("Find_by_title dataframe generated")
+    print(film_search)
   }
 
 }
