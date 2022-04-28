@@ -32,7 +32,7 @@ The goal of this package is thus to make this data for movies widely seen as imp
 The current version of criterioncollection can be installed from [GitHub](https://github.com/) with:
 
 ``` r
-# install.packages("remotes")
+install.packages("remotes")
 remotes::install_github("arrismo/CriterionCollection")
 ?criterion
 ```
@@ -50,9 +50,14 @@ View(criterion)
 You can use the following functions to find films by the director, spine, or film title. Each function outputs a data frame based on your input.
 ```{r}
 find_by_director("John Woo")
+```
+
+```{r}
 find_by_title("Grand Illusion")
+```
+
+```{r}
 find_by_spine("1")
-find_boxset("Melvin Van Peebles: Essential Films")
 ```
 
 The package also contains a dataset with only the boxsets and the movies in those boxsets. The contents of individual boxsets can be viewed using a similar function, find_boxset.

@@ -32,7 +32,7 @@ The current version of criterioncollection can be installed from
 [GitHub](https://github.com/) with:
 
 ``` r
-# install.packages("remotes")
+install.packages("remotes")
 remotes::install_github("arrismo/CriterionCollection")
 ?criterion
 ```
@@ -56,20 +56,19 @@ input.
 ``` r
 find_by_director("John Woo")
 #> [1] "Find_by_director dataframe generated"
-#>   spine year   country       title director
-#> 8     8 1989 Hong Kong  The Killer John Woo
-#> 9     9 1992 Hong Kong Hard Boiled John Woo
+#>   spine year   country       title director   imdb_id
+#> 8     8 1989 Hong Kong  The Killer John Woo tt0097202
+#> 9     9 1992 Hong Kong Hard Boiled John Woo tt0104684
+```
+
+``` r
 find_by_title("Grand Illusion")
 #> [1] "Find_by_title dataframe generated"
+```
+
+``` r
 find_by_spine("1")
 #> [1] "Find_by_spine dataframe generated"
-find_boxset("Melvin Van Peebles: Essential Films")
-#>                          boxset_title                       movie_title year
-#> 6 Melvin Van Peebles: Essential Films     The Story of a Three Day Pass 1967
-#> 7 Melvin Van Peebles: Essential Films                    Watermelon Man 1967
-#> 8 Melvin Van Peebles: Essential Films Sweet Sweetback’s Baadasssss Song 1967
-#> 9 Melvin Van Peebles: Essential Films               Don’t Play Us Cheap 1967
-#> [1] "Find_boxset dataframe generated"
 ```
 
 The package also contains a dataset with only the boxsets and the movies
