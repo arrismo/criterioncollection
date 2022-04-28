@@ -13,10 +13,11 @@ knitr::opts_chunk$set(
 )
 ```
 
-# criterioncollection R Package
+# criterioncollection 
 
 <!-- badges: start -->
 [![R-CMD-check](https://github.com/arrismo/CriterionCollection/workflows/R-CMD-check/badge.svg)](https://github.com/arrismo/CriterionCollection/actions)
+[![Lifecycle: experimental](https://img.shields.io/badge/lifecycle-experimental-orange.svg)](https://lifecycle.r-lib.org/articles/stages.html#experimental)
 <!-- badges: end -->
 
 ## Overview
@@ -34,7 +35,6 @@ The current version of criterioncollection can be installed from [GitHub](https:
 ``` r
 # install.packages("remotes")
 remotes::install_github("arrismo/CriterionCollection")
-?criterion
 ```
 
 ## Loading and Usage
@@ -44,6 +44,14 @@ The current version of criterioncollection can be used primarily to access data 
 ```{r example}
 library(criterioncollection)
 View(criterion)
+?criterion
+```
+
+You can also view our boxsets dataset that contains the boxset title, indiviudal movie title, and year released. 
+```{r}
+View(boxsets)
+?boxsets
+
 ```
 
 
