@@ -17,6 +17,7 @@ Imports:
     stringr,
     usethis,
     dplyr,
+    magrittr,
     readr,
     utils, 
     imdbapi

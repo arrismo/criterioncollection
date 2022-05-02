@@ -13,7 +13,7 @@ knitr::opts_chunk$set(
 )
 ```
 
-# criterioncollection 
+# criterioncollection <img src = "man/figures/criterion_hex.png" align = "right" height = "139" />
 
 <!-- badges: start -->
 [![R-CMD-check](https://github.com/arrismo/CriterionCollection/workflows/R-CMD-check/badge.svg)](https://github.com/arrismo/CriterionCollection/actions)

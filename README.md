@@ -1,7 +1,7 @@
 
 <!-- README.md is generated from README.Rmd. Please edit that file -->
 
-# criterioncollection
+# criterioncollection <img src = "man/figures/criterion_hex.png" align = "right" height = "139" />
 
 <!-- badges: start -->
 
@@ -66,19 +66,46 @@ input.
 ``` r
 find_by_director("John Woo")
 #> [1] "Find_by_director dataframe generated"
-#>   spine year   country       title director   imdb_id
-#> 8     8 1989 Hong Kong  The Killer John Woo tt0097202
-#> 9     9 1992 Hong Kong Hard Boiled John Woo tt0104684
+#> # A tibble: 2 × 6
+#>   spine year  country   title       director imdb_id  
+#>   <dbl> <chr> <chr>     <chr>       <chr>    <chr>    
+#> 1     8 1989  Hong Kong The Killer  John Woo tt0097202
+#> 2     9 1992  Hong Kong Hard Boiled John Woo tt0104684
 ```
 
 ``` r
 find_by_title("Grand Illusion")
+#> Warning: `as_data_frame()` was deprecated in tibble 2.0.0.
+#> Please use `as_tibble()` instead.
+#> The signature and semantics have changed, see `?as_tibble`.
+#> This warning is displayed once every 8 hours.
+#> Call `lifecycle::last_lifecycle_warnings()` to see where this warning was generated.
 #> [1] "Find_by_title dataframe generated"
+#> # A tibble: 2 × 30
+#>   Title        Year  Rated Released   Runtime Genre Director Writer Actors Plot 
+#>   <chr>        <chr> <chr> <date>     <chr>   <chr> <chr>    <chr>  <chr>  <chr>
+#> 1 The Grand I… 1937  Not … 1938-09-12 113 min Dram… Jean Re… Charl… Jean … Duri…
+#> 2 The Grand I… 1937  Not … 1938-09-12 113 min Dram… Jean Re… Charl… Jean … Duri…
+#> # … with 20 more variables: Language <chr>, Country <chr>, Awards <chr>,
+#> #   Poster <chr>, Ratings <list>, Metascore <chr>, imdbRating <dbl>,
+#> #   imdbVotes <dbl>, imdb_id <chr>, Type <chr>, DVD <date>, BoxOffice <chr>,
+#> #   Production <chr>, Website <chr>, Response <chr>, spine <dbl>, year <chr>,
+#> #   country <chr>, title <chr>, director <chr>
 ```
 
 ``` r
 find_by_spine("1")
 #> [1] "Find_by_spine dataframe generated"
+#> # A tibble: 2 × 30
+#>   Title        Year  Rated Released   Runtime Genre Director Writer Actors Plot 
+#>   <chr>        <chr> <chr> <date>     <chr>   <chr> <chr>    <chr>  <chr>  <chr>
+#> 1 The Grand I… 1937  Not … 1938-09-12 113 min Dram… Jean Re… Charl… Jean … Duri…
+#> 2 The Grand I… 1937  Not … 1938-09-12 113 min Dram… Jean Re… Charl… Jean … Duri…
+#> # … with 20 more variables: Language <chr>, Country <chr>, Awards <chr>,
+#> #   Poster <chr>, Ratings <list>, Metascore <chr>, imdbRating <dbl>,
+#> #   imdbVotes <dbl>, imdb_id <chr>, Type <chr>, DVD <date>, BoxOffice <chr>,
+#> #   Production <chr>, Website <chr>, Response <chr>, spine <dbl>, year <chr>,
+#> #   country <chr>, title <chr>, director <chr>
 ```
 
 The package also contains a dataset with only the boxsets and the movies
@@ -87,10 +114,12 @@ a similar function, find\_boxset.
 
 ``` r
 find_boxset("The Koker Trilogy")
-#>          boxset_title                  movie_title year
-#> 165 The Koker Trilogy Where Is the Friend’s House? 1987
-#> 166 The Koker Trilogy             And Life Goes On 1987
-#> 167 The Koker Trilogy      Through the Olive Trees 1987
+#> # A tibble: 3 × 3
+#>   boxset_title      movie_title                   year
+#>   <chr>             <chr>                        <dbl>
+#> 1 The Koker Trilogy Where Is the Friend’s House?  1987
+#> 2 The Koker Trilogy And Life Goes On              1987
+#> 3 The Koker Trilogy Through the Olive Trees       1987
 #> [1] "Find_boxset dataframe generated"
 ```
 
