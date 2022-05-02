@@ -26,10 +26,13 @@ find_by_spine <- function(spine_no) {
   if (dim(spine_search)[1] == 0) {
     stop("Spine number not found")
   } else {
+    spine_df <- imdbapi::find_by_id(spine_search$imdb_id[1]) %>%
+      rename("imdb_id" = "imdbID") %>%
+      inner_join(spine_search, by = c("imdb_id"))
     if(interactive()){
-      View(spine_search)}
+      View(spine_df)}
     print("Find_by_spine dataframe generated")
-    print(spine_search)
+    print(spine_df)
   }
   }
 }
@@ -55,10 +58,13 @@ find_by_title <- function(film_title) {
   if (dim(film_search)[1] == 0) {
     stop("Title not found")
   } else {
+    title_df <- imdbapi::find_by_id(film_search$imdb_id[1]) %>%
+      rename("imdb_id" = "imdbID") %>%
+      inner_join(film_search, by = c("imdb_id"))
     if(interactive()){
-      View(film_search)}
+      View(title_df)}
     print("Find_by_title dataframe generated")
-    print(film_search)
+    print(title_df)
   }
 
 }
