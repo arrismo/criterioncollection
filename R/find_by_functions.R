@@ -8,6 +8,7 @@ globalVariables(c(
 #'
 #' @param spine_no spine number
 #' @importFrom utils View
+#' @import dplyr
 #' @export
 #' @examples
 #' \donttest{
@@ -43,6 +44,7 @@ find_by_spine <- function(spine_no) {
 #' Output a data frame for specific film title
 #'
 #' @param film_title name of film
+#' @import dplyr
 #' @export
 #' @examples
 #' \donttest{

@@ -5,6 +5,7 @@ library(readr)
 library(stringr)
 library(rvest)
 library(usethis)
+library(dplyr)
 
 url <- 'https://www.criterion.com/shop/browse/list?sort=spine_number&direction=asc'
 webpage <- read_html(url)
