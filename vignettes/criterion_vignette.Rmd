@@ -1,0 +1,91 @@
+---
+title: "criterioncollection"
+author: "Caroline McKenna and Arris Moise"
+date: "`r Sys.Date()`"
+output: rmarkdown::html_vignette
+vignette: >
+  %\VignetteIndexEntry{criterioncollection}
+  %\VignetteEngine{knitr::rmarkdown}
+  %\VignetteEncoding{UTF-8}
+---
+
+```{r, include = FALSE}
+knitr::opts_chunk$set(
+  collapse = TRUE,
+  comment = "#>"
+)
+```
+
+```{r setup}
+library(criterioncollection)
+library(dplyr)
+library(ggplot2)
+```
+
+# Data Visualization with criterioncollection
+
+The criterioncollection package can easily be used to make data visualizations with its data sets. 
+
+Here, ggplot2 is used in conjunction with the package to show how examples of how users can make sense of the data and show what sorts of movies the Criterion Collection tends to include. This could help show biases in what movies are selected to be in the Criterion Collection, or perhaps help users make judgments on a country's film industry or a director's oeuvre.
+
+# Countries in the Criterion Collection
+
+The following code creates a data frame with the countries and the number of movies in the Criterion Collection from those countries. It eliminates the blank row, as there are some items without countries associated with them.
+```{r}
+country_count <- criterion %>% 
+  group_by(country) %>% 
+  summarize(count = n())
+
+country_count <- country_count[!country_count$country == "",]
+
+print(country_count)
+```
+
+A bar plot can be made using this new data set.
+
+```{r}
+ggplot(data = country_count, mapping = aes(x = country, y = count)) + 
+  geom_col(fill = "firebrick4") +
+  theme(axis.text.x = element_text(angle = -90, hjust = 0, vjust = 0)) +
+  labs(title = "Movies in the Criterion Collection by Country", 
+       x = "Country", y = "Number of Movies in the CC")
+```
+
+The data can also be filtered to only include countries with more than 5 movies in the Criterion Collection, making the visualization more limited and coherent.
+```{r}
+country_count_limit <- country_count %>% 
+  filter(count > 5)
+
+ggplot(data = country_count_limit, mapping = aes(x = country, y = count)) + 
+  geom_col(fill = "darkslateblue") +
+  theme(axis.text.x = element_text(angle = -90, hjust = 0, vjust = 0)) + 
+  labs(title = "Movies in the Criterion Collection by Country, >5", 
+       x = "Country", y = "Number of Movies in the CC")
+```
+
+## Directors in the Criterion Collection
+
+The same process can be done with the directors, as some directors have many movies in the Criterion Collection.
+
+```{r}
+director_count <- criterion %>% 
+  group_by(director) %>% 
+  summarize(count = n())
+
+director_count <- director_count[-c(1), ]
+
+director_count_limit <- director_count %>% 
+  filter(count >= 10)
+
+print(director_count_limit)
+```
+
+There are hundreds of directors included in the data set, so this visualization only includes directors with 10 or more movies in the Criterion Collection.
+
+```{r}
+ggplot(data = director_count_limit, mapping = aes(x = director, y = count)) + 
+  geom_col(fill = "darkolivegreen") +
+  theme(axis.text.x = element_text(angle = -90, hjust = 0, vjust = 0)) +
+  labs(title = "Directors with 10 or More Movies in the Criterion Collection",
+       x = "Director", y = "Number of Movies in the CC")
+```

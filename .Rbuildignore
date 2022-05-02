@@ -4,5 +4,6 @@
 ^README\.Rmd$
 ^.github
 ^R/extract_boxsets.R
+criterion_vignette.Rmd
 ^inst
 ^\.github$

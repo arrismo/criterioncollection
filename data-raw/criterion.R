@@ -48,6 +48,8 @@ criterion <- read_csv("data-raw/criterion.csv")
 
 criterion$country <- gsub("[\r\n]", "", criterion$country)
 
+criterion$country[criterion$country == " Japan"] <- "Japan"
+
 criterion$imdb_id <- c("tt0028950", "tt0047478", "tt0030341", "tt0071129",
                        "tt0053198", "tt0038348", "tt0051994", "tt0097202",
                        "tt0104684", "tt0067959", "tt0050976", "tt0088258",

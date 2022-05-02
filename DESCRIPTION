@@ -18,7 +18,8 @@ Imports:
     usethis,
     dplyr,
     readr,
-    utils
+    utils, 
+    imdbapi
 LazyData: true
 Suggests: 
     knitr,
