@@ -90,11 +90,10 @@ find_by_title("Grand Illusion")
 #> This warning is displayed once every 8 hours.
 #> Call `lifecycle::last_lifecycle_warnings()` to see where this warning was generated.
 #> [1] "Find_by_title dataframe generated"
-#> # A tibble: 2 × 30
+#> # A tibble: 1 × 30
 #>   Title        Year  Rated Released   Runtime Genre Director Writer Actors Plot 
 #>   <chr>        <chr> <chr> <date>     <chr>   <chr> <chr>    <chr>  <chr>  <chr>
 #> 1 The Grand I… 1937  Not … 1938-09-12 113 min Dram… Jean Re… Charl… Jean … Duri…
-#> 2 The Grand I… 1937  Not … 1938-09-12 113 min Dram… Jean Re… Charl… Jean … Duri…
 #> # … with 20 more variables: Language <chr>, Country <chr>, Awards <chr>,
 #> #   Poster <chr>, Ratings <list>, Metascore <chr>, imdbRating <dbl>,
 #> #   imdbVotes <dbl>, imdb_id <chr>, Type <chr>, DVD <date>, BoxOffice <chr>,
@@ -108,11 +107,10 @@ find\_by\_spine function can be helpful for the &gt;1500 movies that do.
 ``` r
 find_by_spine("1")
 #> [1] "Find_by_spine dataframe generated"
-#> # A tibble: 2 × 30
+#> # A tibble: 1 × 30
 #>   Title        Year  Rated Released   Runtime Genre Director Writer Actors Plot 
 #>   <chr>        <chr> <chr> <date>     <chr>   <chr> <chr>    <chr>  <chr>  <chr>
 #> 1 The Grand I… 1937  Not … 1938-09-12 113 min Dram… Jean Re… Charl… Jean … Duri…
-#> 2 The Grand I… 1937  Not … 1938-09-12 113 min Dram… Jean Re… Charl… Jean … Duri…
 #> # … with 20 more variables: Language <chr>, Country <chr>, Awards <chr>,
 #> #   Poster <chr>, Ratings <list>, Metascore <chr>, imdbRating <dbl>,
 #> #   imdbVotes <dbl>, imdb_id <chr>, Type <chr>, DVD <date>, BoxOffice <chr>,
