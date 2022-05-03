@@ -63,6 +63,9 @@ You can use the following functions to find films by the director,
 spine, or film title. Each function outputs a data frame based on your
 input.
 
+The find\_by\_director function returns the data from the criterion data
+set for all movies in the Criterion Collection by a certain director.
+
 ``` r
 find_by_director("John Woo")
 #> [1] "Find_by_director dataframe generated"
@@ -72,6 +75,12 @@ find_by_director("John Woo")
 #> 1     8 1989  Hong Kong The Killer  John Woo tt0097202
 #> 2     9 1992  Hong Kong Hard Boiled John Woo tt0104684
 ```
+
+The find\_by\_title and find\_by\_spine functions return not only the
+data from the criterion data set, but also data from the imdbapi
+package. This will include more data for a single movie than the
+Criterion Collection supplies, such as its actors and its IMDb user
+rating.
 
 ``` r
 find_by_title("Grand Illusion")
@@ -92,6 +101,9 @@ find_by_title("Grand Illusion")
 #> #   Production <chr>, Website <chr>, Response <chr>, spine <dbl>, year <chr>,
 #> #   country <chr>, title <chr>, director <chr>
 ```
+
+Not all movies in the Criterion Collection have a spine number, but the
+find\_by\_spine function can be helpful for the &gt;1500 movies that do.
 
 ``` r
 find_by_spine("1")
