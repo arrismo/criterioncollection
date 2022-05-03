@@ -30,6 +30,7 @@ find_by_spine <- function(spine_no) {
     spine_df <- imdbapi::find_by_id(spine_search$imdb_id[1]) %>%
       rename("imdb_id" = "imdbID") %>%
       inner_join(spine_search, by = c("imdb_id"))
+    spine_df <- spine_df[1,]
     if(interactive()){
       View(spine_df)}
     print("Find_by_spine dataframe generated")
@@ -63,6 +64,7 @@ find_by_title <- function(film_title) {
     title_df <- imdbapi::find_by_id(film_search$imdb_id[1]) %>%
       rename("imdb_id" = "imdbID") %>%
       inner_join(film_search, by = c("imdb_id"))
+    title_df <- title_df[1,]
     if(interactive()){
       View(title_df)}
     print("Find_by_title dataframe generated")
