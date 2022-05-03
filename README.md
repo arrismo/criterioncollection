@@ -51,7 +51,7 @@ View(criterion)
 ?criterion
 ```
 
-You can also view our boxsets dataset that contains the boxset title,
+You can also view the boxsets dataset that contains the boxset title,
 individual movie title, and year released.
 
 ``` r
