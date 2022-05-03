@@ -84,11 +84,6 @@ rating.
 
 ``` r
 find_by_title("Grand Illusion")
-#> Warning: `as_data_frame()` was deprecated in tibble 2.0.0.
-#> Please use `as_tibble()` instead.
-#> The signature and semantics have changed, see `?as_tibble`.
-#> This warning is displayed once every 8 hours.
-#> Call `lifecycle::last_lifecycle_warnings()` to see where this warning was generated.
 #> [1] "Find_by_title dataframe generated"
 #> # A tibble: 1 × 30
 #>   Title        Year  Rated Released   Runtime Genre Director Writer Actors Plot 
