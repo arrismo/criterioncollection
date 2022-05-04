@@ -97,7 +97,7 @@ find_by_title("Grand Illusion")
 ```
 
 Not all movies in the Criterion Collection have a spine number, but the
-find\_by\_spine function can be helpful for the &gt;1500 movies that do.
+find\_by\_spine function can be helpful for the &gt;1000 movies that do.
 
 ``` r
 find_by_spine("1")

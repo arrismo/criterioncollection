@@ -67,7 +67,7 @@ The find_by_title and find_by_spine functions return not only the data from the 
 find_by_title("Grand Illusion")
 ```
 
-Not all movies in the Criterion Collection have a spine number, but the find_by_spine function can be helpful for the >1500 movies that do.
+Not all movies in the Criterion Collection have a spine number, but the find_by_spine function can be helpful for the >1000 movies that do.
 
 ```{r message=FALSE, paged.print=TRUE, warning = FALSE}
 find_by_spine("1")
