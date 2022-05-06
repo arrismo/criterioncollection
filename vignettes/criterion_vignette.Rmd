@@ -12,11 +12,12 @@ vignette: >
 ```{r, include = FALSE}
 knitr::opts_chunk$set(
   collapse = TRUE,
-  comment = "#>"
+  comment = "#>",
+  fig.width = 5
 )
 ```
 
-```{r setup}
+```{r setup, message=FALSE}
 library(criterioncollection)
 library(dplyr)
 library(ggplot2)
@@ -24,7 +25,7 @@ library(ggplot2)
 
 # Data Visualization with criterioncollection
 
-The criterioncollection package can easily be used to make data visualizations with its data sets. 
+The **criterioncollection** package can easily be used to make data visualizations with its data sets. 
 
 Here, ggplot2 is used in conjunction with the package to show how examples of how users can make sense of the data and show what sorts of movies the Criterion Collection tends to include. This could help show biases in what movies are selected to be in the Criterion Collection, or perhaps help users make judgments on a country's film industry or a director's oeuvre.
 
@@ -36,9 +37,8 @@ country_count <- criterion %>%
   group_by(country) %>% 
   summarize(count = n())
 
-country_count <- country_count[!country_count$country == "",]
-
-print(country_count)
+country_count %>%
+  filter(country != "")
 ```
 
 A bar plot can be made using this new data set.
