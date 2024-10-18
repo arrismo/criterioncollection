@@ -9,7 +9,7 @@ on:
 name: R-CMD-check.yaml
 
 jobs:
-R-CMD-check:
+  R-CMD-check:
     runs-on: ${{ matrix.config.os }}
 
     name: ${{ matrix.config.os }} (${{ matrix.config.r }})
