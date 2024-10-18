@@ -1,5 +1,5 @@
 globalVariables(c(
-  "criterion","boxsets"
+  "criterion", "boxsets"
 ))
 #' Search by Spine Number
 #'
@@ -14,28 +14,29 @@ globalVariables(c(
 #' \donttest{
 #'
 #' find_by_spine("1")
-#'}
+#' }
 find_by_spine <- function(spine_no) {
   UseMethod("find_by_spine")
 }
 
 find_by_spine <- function(spine_no) {
-  if(!is.character(spine_no)){
+  if (!is.character(spine_no)) {
     stop("Spine number should be a character")
-  }else{
-  spine_search<- criterion[grep(spine_no, criterion$spine), ]
-  if (dim(spine_search)[1] == 0) {
-    stop("Spine number not found")
   } else {
-    spine_df <- imdbapi::find_by_id(spine_search$imdb_id[1]) %>%
-      rename("imdb_id" = "imdbID") %>%
-      inner_join(spine_search, by = c("imdb_id"))
-    spine_df <- spine_df[1,]
-    if(interactive()){
-      View(spine_df)}
-    print("Find_by_spine dataframe generated")
-    print(spine_df)
-  }
+    spine_search <- criterion[grep(spine_no, criterion$spine), ]
+    if (dim(spine_search)[1] == 0) {
+      stop("Spine number not found")
+    } else {
+      spine_df <- imdbapi::find_by_id(spine_search$imdb_id[1]) %>%
+        rename("imdb_id" = "imdbID") %>%
+        inner_join(spine_search, by = c("imdb_id"))
+      spine_df <- spine_df[1, ]
+      if (interactive()) {
+        View(spine_df)
+      }
+      print("Find_by_spine dataframe generated")
+      print(spine_df)
+    }
   }
 }
 
@@ -57,20 +58,20 @@ find_by_title <- function(film_title) {
 }
 
 find_by_title <- function(film_title) {
-  film_search<- criterion[grep(film_title, criterion$title), ]
+  film_search <- criterion[grep(film_title, criterion$title), ]
   if (dim(film_search)[1] == 0) {
     stop("Title not found")
   } else {
     title_df <- imdbapi::find_by_id(film_search$imdb_id[1]) %>%
       rename("imdb_id" = "imdbID") %>%
       inner_join(film_search, by = c("imdb_id"))
-    title_df <- title_df[1,]
-    if(interactive()){
-      View(title_df)}
+    title_df <- title_df[1, ]
+    if (interactive()) {
+      View(title_df)
+    }
     print("Find_by_title dataframe generated")
     print(title_df)
   }
-
 }
 
 #' Search by movie director
@@ -92,12 +93,13 @@ find_by_director <- function(film_director) {
 
 # option to turn behavior her
 find_by_director <- function(film_director) {
-  director_search<- criterion[grep(film_director, criterion$director), ]
+  director_search <- criterion[grep(film_director, criterion$director), ]
   if (dim(director_search)[1] == 0) {
     stop("Director not found")
   } else {
-    if(interactive()){
-      View(director_search)}
+    if (interactive()) {
+      View(director_search)
+    }
     print("Find_by_director dataframe generated")
     print(director_search)
   }
@@ -133,5 +135,3 @@ find_boxset <- function(boxset_title) {
     print("Find_boxset dataframe generated")
   }
 }
-
-
