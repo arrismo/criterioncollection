@@ -6,8 +6,6 @@
 <!-- badges: start -->
 
 [![R-CMD-check](https://github.com/arrismo/CriterionCollection/workflows/R-CMD-check/badge.svg)](https://github.com/arrismo/CriterionCollection/actions)
-[![Lifecycle:
-experimental](https://img.shields.io/badge/lifecycle-experimental-orange.svg)](https://lifecycle.r-lib.org/articles/stages.html#experimental)
 <!-- badges: end -->
 
 ## Overview
@@ -43,7 +41,7 @@ remotes::install_github("arrismo/criterioncollection")
 The current version of criterioncollection can be used primarily to
 access data on the Criterion Collection. The dataset, criterion,
 contains every item in the Criterion Collection and includes columns for
-spine\_number, year, country, title, and director.
+`spine_number`, `year`, `country`, `title`, and `director`.
 
 ``` r
 library(criterioncollection)
@@ -63,8 +61,9 @@ You can use the following functions to find films by the director,
 spine, or film title. Each function outputs a data frame based on your
 input.
 
-The find\_by\_director function returns the data from the criterion data
-set for all movies in the Criterion Collection by a certain director.
+The `find_by_director()` function returns the data from the criterion
+data set for all movies in the Criterion Collection by a certain
+director.
 
 ``` r
 find_by_director("John Woo")
@@ -76,8 +75,8 @@ find_by_director("John Woo")
 #> 2     9 1992  Hong Kong Hard Boiled John Woo tt0104684
 ```
 
-The find\_by\_title and find\_by\_spine functions return not only the
-data from the criterion data set, but also data from the imdbapi
+The `find_by_title()` and `find_by_spine()` functions return not only
+the data from the criterion data set, but also data from the **imdbapi**
 package. This will include more data for a single movie than the
 Criterion Collection supplies, such as its actors and its IMDb user
 rating.
@@ -89,7 +88,7 @@ find_by_title("Grand Illusion")
 #>   Title        Year  Rated Released   Runtime Genre Director Writer Actors Plot 
 #>   <chr>        <chr> <chr> <date>     <chr>   <chr> <chr>    <chr>  <chr>  <chr>
 #> 1 The Grand I… 1937  Not … 1938-09-12 113 min Dram… Jean Re… Charl… Jean … Duri…
-#> # … with 20 more variables: Language <chr>, Country <chr>, Awards <chr>,
+#> # ℹ 20 more variables: Language <chr>, Country <chr>, Awards <chr>,
 #> #   Poster <chr>, Ratings <list>, Metascore <chr>, imdbRating <dbl>,
 #> #   imdbVotes <dbl>, imdb_id <chr>, Type <chr>, DVD <date>, BoxOffice <chr>,
 #> #   Production <chr>, Website <chr>, Response <chr>, spine <dbl>, year <chr>,
@@ -97,7 +96,7 @@ find_by_title("Grand Illusion")
 ```
 
 Not all movies in the Criterion Collection have a spine number, but the
-find\_by\_spine function can be helpful for the &gt;1000 movies that do.
+`find_by_spine()` function can be helpful for the \>1000 movies that do.
 
 ``` r
 find_by_spine("1")
@@ -106,7 +105,7 @@ find_by_spine("1")
 #>   Title        Year  Rated Released   Runtime Genre Director Writer Actors Plot 
 #>   <chr>        <chr> <chr> <date>     <chr>   <chr> <chr>    <chr>  <chr>  <chr>
 #> 1 The Grand I… 1937  Not … 1938-09-12 113 min Dram… Jean Re… Charl… Jean … Duri…
-#> # … with 20 more variables: Language <chr>, Country <chr>, Awards <chr>,
+#> # ℹ 20 more variables: Language <chr>, Country <chr>, Awards <chr>,
 #> #   Poster <chr>, Ratings <list>, Metascore <chr>, imdbRating <dbl>,
 #> #   imdbVotes <dbl>, imdb_id <chr>, Type <chr>, DVD <date>, BoxOffice <chr>,
 #> #   Production <chr>, Website <chr>, Response <chr>, spine <dbl>, year <chr>,
@@ -115,7 +114,7 @@ find_by_spine("1")
 
 The package also contains a dataset with only the boxsets and the movies
 in those boxsets. The contents of individual boxsets can be viewed using
-a similar function, find\_boxset.
+a similar function, find_boxset.
 
 ``` r
 find_boxset("The Koker Trilogy")
@@ -130,11 +129,11 @@ find_boxset("The Koker Trilogy")
 
 ## References
 
--   Criterion. *Shop All Films*. The Criterion Collection.
-    <https://www.criterion.com/shop/browse/list>.
+- Criterion. *Shop All Films*. The Criterion Collection.
+  <https://www.criterion.com/shop/browse/list>.
 
--   Criterion. *Our Mission*. The Criterion Collection.
-    <https://www.criterion.com/about>.
+- Criterion. *Our Mission*. The Criterion Collection.
+  <https://www.criterion.com/about>.
 
--   Criterion. *Box Sets*. The Criterion Collection.
-    <https://www.criterion.com/shop/collection/380-box-sets>
+- Criterion. *Box Sets*. The Criterion Collection.
+  <https://www.criterion.com/shop/collection/380-box-sets>

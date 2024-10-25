@@ -2,10 +2,10 @@ name: criterionscrape
 
 # Controls when the action will run.
 on:
-  schedule:
-    - cron: "0 9 * * *"
-
-#At 12:00 AM, on day 1 of the month
+  push:
+    branches: [main, master]
+  pull_request:
+    branches: [main, master]
 
 jobs:
   autoscrape:
@@ -13,8 +13,8 @@ jobs:
     runs-on: macos-latest
 
     steps:
-    - uses: actions/checkout@master
-    - uses: r-lib/actions/setup-r@master
+    - uses: actions/checkout@main
+    - uses: r-lib/actions/setup-r@main
 
     - name: Install packages
       run: |
