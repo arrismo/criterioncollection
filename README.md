@@ -68,11 +68,12 @@ director.
 ``` r
 find_by_director("John Woo")
 #> [1] "Find_by_director dataframe generated"
-#> # A tibble: 2 × 6
-#>   spine year  country   title       director imdb_id  
-#>   <dbl> <chr> <chr>     <chr>       <chr>    <chr>    
-#> 1     8 1989  Hong Kong The Killer  John Woo tt0097202
-#> 2     9 1992  Hong Kong Hard Boiled John Woo tt0104684
+#> # A tibble: 3 × 6
+#>   spine year  country                   title                   director imdb_id
+#>   <dbl> <chr> <chr>                     <chr>                   <chr>    <chr>  
+#> 1     8 1989  "\t\t\t\t\tHong Kong\t\t" The Killer              John Woo tt1136…
+#> 2     9 1992  "\t\t\t\t\tHong Kong\t\t" Hard Boiled             John Woo tt0104…
+#> 3  1174 1979  "\t\t\t\t\tHong Kong\t\t" Last Hurrah for Chival… John Woo <NA>
 ```
 
 The `find_by_title()` and `find_by_spine()` functions return not only
