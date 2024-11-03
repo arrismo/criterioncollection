@@ -54,6 +54,10 @@ criterion$country[criterion$country == " Japan"] <- "Japan"
 
 criterion <- get_imdb_ids(criterion)
 
+
+usethis::use_data(criterion, overwrite = TRUE)
+
+
 get_imdb_ids <- function(df) {
   # Function to safely get IMDB ID for a single movie
   get_single_movie_id <- function(title, year) {
@@ -81,23 +85,20 @@ get_imdb_ids <- function(df) {
   }
 
   # Create progress bar
-  total <- nrow(df)
-  pb <- txtProgressBar(min = 0, max = total, style = 3)
+  #total <- nrow(df)
+  #pb <- txtProgressBar(min = 0, max = total, style = 3)
 
   # Process each movie
   df$imdb_id <- sapply(1:nrow(df), function(i) {
     id <- get_single_movie_id(df$title[i], df$year[i])
-    setTxtProgressBar(pb, i)
+    #setTxtProgressBar(pb, i)
     Sys.sleep(0.2)  # Add small delay to avoid rate limiting
     return(id)
   })
 
-  close(pb)
+  #close(pb)
   return(df)
 }
-
-
-usethis::use_data(criterion, overwrite = TRUE)
 
 
 

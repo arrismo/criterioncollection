@@ -7,3 +7,4 @@
 criterion_vignette.Rmd
 ^inst
 ^\.github$
+^utils.R
