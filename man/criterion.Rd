@@ -3,7 +3,7 @@
 \docType{data}
 \name{criterion}
 \alias{criterion}
-\title{Data for movies in the Criterion Collection as of March 2022}
+\title{Data for movies in the Criterion Collection as of November 2024}
 \format{
 A data frame of 1,515 rows with each row representing an item, such
 as a movie or box set, in the Criterion Collection.

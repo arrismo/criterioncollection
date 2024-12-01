@@ -1,4 +1,4 @@
-#' Data for movies in the Criterion Collection as of March 2022
+#' Data for movies in the Criterion Collection as of November 2024
 #'
 #' 1,515 items in the Criterion Collection, including box sets, from
 #' <https://www.criterion.com/shop/browse/list>.
@@ -15,7 +15,7 @@
 #' }
 "criterion"
 
-#' Data for boxsets of movies from the Criterion Collection as of March 2022
+#' Data for boxsets of movies from the Criterion Collection as of November 2024
 #'
 #' @format  A data frame of 276 rows with each row representing the boxset title and the movies in the set.
 #'

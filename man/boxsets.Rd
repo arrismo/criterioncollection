@@ -3,7 +3,7 @@
 \docType{data}
 \name{boxsets}
 \alias{boxsets}
-\title{Data for boxsets of movies from the Criterion Collection as of March 2022}
+\title{Data for boxsets of movies from the Criterion Collection as of November 2024}
 \format{
 A data frame of 276 rows with each row representing the boxset title and the movies in the set.
 
@@ -17,6 +17,6 @@ A data frame of 276 rows with each row representing the boxset title and the mov
 boxsets
 }
 \description{
-Data for boxsets of movies from the Criterion Collection as of March 2022
+Data for boxsets of movies from the Criterion Collection as of November 2024
 }
 \keyword{datasets}

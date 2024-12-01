@@ -52,12 +52,6 @@ criterion$country <- gsub("[\r\n]", "", criterion$country)
 criterion$country[criterion$country == " Japan"] <- "Japan"
 
 
-criterion <- get_imdb_ids(criterion)
-
-
-usethis::use_data(criterion, overwrite = TRUE)
-
-
 get_imdb_ids <- function(df) {
   # Function to safely get IMDB ID for a single movie
   get_single_movie_id <- function(title, year) {
@@ -99,6 +93,13 @@ get_imdb_ids <- function(df) {
   #close(pb)
   return(df)
 }
+
+criterion <- get_imdb_ids(criterion)
+
+
+usethis::use_data(criterion, overwrite = TRUE)
+
+
 
 
 
